@@ -278,9 +278,9 @@ export default function CheckoutForm({ supplierId }) {
           {paymentMethod === "hyperpay" && (
             <form
               className='paymentWidgets mt-2 w-full'
-              action={`http://localhost:5002/api/payment-status?userId=${user.uid}&supplierId=${supplierId}`}
+              action={`https://hyperpay-api.onrender.com/api/payment-status?userId=${user.uid}&supplierId=${supplierId}`}
               data-brands='VISA MASTER MADA'
-              data-shopper-result-url={`http://localhost:3000/payment-success`}
+              data-shopper-result-url={`https://marsos.vercel.app/payment-success`}
               crossOrigin='anonymous'
               integrity='sha384-<your-hash>'
             />
