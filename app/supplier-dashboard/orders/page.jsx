@@ -166,6 +166,7 @@ export default function SupplierOrdersPage() {
                     <TableHead>{t("orders.actions")}</TableHead>
                   </TableRow>
                 </TableHeader>
+
                 <TableBody>
                   {orders.map((o) => (
                     <TableRow key={o.id}>

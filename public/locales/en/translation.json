@@ -646,6 +646,32 @@
     "allCategories": "All Categories"
   },
 
+  "orders": {
+    "title": "Supplier Orders",
+    "loading": "Loading orders…",
+    "none": "No orders found.",
+    "unknownDate": "Unknown date",
+    "na": "N/A",
+    "sadad": "Sadad Number",
+    "bill": "Bill Number",
+    "net": "Net Amount",
+    "fee": "Fee",
+    "total": "Total Amount",
+    "status": "Status",
+    "date": "Date",
+    "actions": "Actions",
+    "invoice": "Invoice",
+    "reviewInvoice": "Review Invoice",
+    "contactBuyer": "Contact Buyer",
+    "paymentApproved": "Payment approved",
+    "statuses": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "cancelled": "Cancelled"
+    }
+  },
+
   "supplier-products": {
     "title": "Products",
     "subtitle": "Find the best products from this supplier.",

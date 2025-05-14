@@ -16,6 +16,32 @@
     "help_center": "مركز المساعدة",
     "become_supplier": "كن مورداً"
   },
+
+  "orders": {
+    "title": "طلبات المورد",
+    "loading": "جارٍ تحميل الطلبات…",
+    "none": "لا توجد طلبات.",
+    "unknownDate": "تاريخ غير معروف",
+    "na": "غير متوفر",
+    "sadad": "رقم سداد",
+    "bill": "رقم الفاتورة",
+    "net": "صافي المبلغ",
+    "fee": "الرسوم",
+    "total": "إجمالي المبلغ",
+    "status": "الحالة",
+    "date": "التاريخ",
+    "actions": "الإجراءات",
+    "invoice": "فاتورة",
+    "reviewInvoice": "مراجعة الفاتورة",
+    "contactBuyer": "اتصل بالمشتري",
+    "paymentApproved": "تمت الموافقة على الدفع",
+    "statuses": {
+      "pending": "قيد الانتظار",
+      "approved": "معتمد",
+      "rejected": "مرفوض",
+      "cancelled": "ملغى"
+    }
+  },
   "search": {
     "searchPlaceholder": "ابحث عن المنتجات...",
     "productsHeading": "المنتجات",
