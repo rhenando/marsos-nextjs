@@ -1,23 +1,37 @@
 # Project Structure
 
-marsos-nextv2
+marsos-nextjs
 ├── .next
 │   ├── cache
 │   │   ├── images
+│   │   │   ├── _gxdzf2nnbZW8wY1nirZOeb6RrgH7Jk6bYyUBhtHDE8
+│   │   │   │   └── 60.1747141295030.XXYgBbWEdXFCFaJAjGDa1Qn51ExoVQIbuj1PdXuI5KE.Vy8iYjU0LTE5NmM5MDJmMDhmIg.webp
 │   │   │   ├── 2p5Z8MB79uP0Jmn7IWasCQtMx4oMG2RISJDFZsP5qEQ
-│   │   │   │   └── 60.1747130008689.XXYgBbWEdXFCFaJAjGDa1Qn51ExoVQIbuj1PdXuI5KE.Vy8iYjU0LTE5NmM5MDJmMDhmIg.webp
+│   │   │   │   └── 60.1747154666912.XXYgBbWEdXFCFaJAjGDa1Qn51ExoVQIbuj1PdXuI5KE.Vy8iYjU0LTE5NmM5MDJmMDhmIg.webp
+│   │   │   ├── 4f1ys93fzj34_8D7liz6Ohx-La90xGJ5FtXBAbBS-4c
+│   │   │   │   └── 60.1747141295075.P0PbYkHK6CCPfqGerm_i-Vh14a9LJjVyzaGsm3SIbY4.Vy8iZWM2LTE5NmM5MDJmMDkwIg.webp
+│   │   │   ├── 6DedItXxMMmik26ie3nvWb3nQP1AcU91-sR0SPIrAUc
+│   │   │   │   └── 60.1747141295027.r9Dr3Qj3uORPjq4YVug1AEswuchWTM04a-er2LOisOM.Vy8iMTRmZC0xOTZjOTAyZjA5MSI.webp
+│   │   │   ├── G--bNvR1EXUjhXh7E1Trhn3ptff3HqB827dOs0oYqmQ
+│   │   │   │   └── 60.1747141290466.kOr2pv3124jWvf3onPaTF99Rk4fP8tfG13HuyvbLLoo.Vy8iMjJmOTYtMTk2YzkwMmYwOGUi.webp
+│   │   │   ├── g7OO0E0Eo3cNw6wWcpLTbnnikWHVMFESTnNMI41Q_3A
+│   │   │   │   └── 60.1747141295027.HVKmliUck9V-Pg2rOT04bw1qGjb95gO9acDeSuclUfs.Vy8iYzM0LTE5NmM5MDJmMDkyIg.webp
 │   │   │   ├── NvTdxQsGMUGq91FaxW2N_NJlHTMX4VVXssotaovD_cs
-│   │   │   │   └── 60.1747130008684.KLp-BgydVcnALMfeSQWYTMAzh1vjoZ8hUylj5exar28.Vy8iZWNlLTE5NmM5MDJmMDhmIg.webp
+│   │   │   │   └── 60.1747154666836.KLp-BgydVcnALMfeSQWYTMAzh1vjoZ8hUylj5exar28.Vy8iZWNlLTE5NmM5MDJmMDhmIg.webp
 │   │   │   ├── O0pGf-QrdgTWFTNmEAB_YYrntgQlVcxgFBsC45o0oUw
-│   │   │   │   └── 60.1747130008710.P0PbYkHK6CCPfqGerm_i-Vh14a9LJjVyzaGsm3SIbY4.Vy8iZWM2LTE5NmM5MDJmMDkwIg.webp
+│   │   │   │   └── 60.1747154667321.P0PbYkHK6CCPfqGerm_i-Vh14a9LJjVyzaGsm3SIbY4.Vy8iZWM2LTE5NmM5MDJmMDkwIg.webp
 │   │   │   ├── rIYo_3f-_DsG2Gq0dDlBK9xIuMDNcEcExeXNNJ7YqkE
-│   │   │   │   └── 60.1747130005014.tgetAUOp90TEodRE50tWrR1sCJB7aARGpqEpKvyVixA.Vy8iMjJmOTYtMTk2YzkwMmYwOGUi.webp
+│   │   │   │   └── 60.1747154660912.tgetAUOp90TEodRE50tWrR1sCJB7aARGpqEpKvyVixA.Vy8iMjJmOTYtMTk2YzkwMmYwOGUi.webp
+│   │   │   ├── Sa9B-yIMHsbCQdqyLXtANe210KlFMvt9VJWP02mF3aE
+│   │   │   │   └── 60.1747141295030.6Ym8Ol6RS5q0hvIhSUDXfy8ybGBU27WVTvWq81Tbcdg.Vy8iYTRkLTE5NmM5MDJmMDgxIg.webp
+│   │   │   ├── v9i2TdNrNw5bbMTk-sc6hkU2Rliri5e1w-q--X0-kmU
+│   │   │   │   └── 60.1747141295028.KLp-BgydVcnALMfeSQWYTMAzh1vjoZ8hUylj5exar28.Vy8iZWNlLTE5NmM5MDJmMDhmIg.webp
 │   │   │   ├── VUXt7q2oLXtnCL6FOYqnrHEjSy4TcYiIWCXABBwH1Xc
-│   │   │   │   └── 60.1747130008730.r9Dr3Qj3uORPjq4YVug1AEswuchWTM04a-er2LOisOM.Vy8iMTRmZC0xOTZjOTAyZjA5MSI.webp
+│   │   │   │   └── 60.1747154666915.r9Dr3Qj3uORPjq4YVug1AEswuchWTM04a-er2LOisOM.Vy8iMTRmZC0xOTZjOTAyZjA5MSI.webp
 │   │   │   ├── XSNKQBwesW2qXV75wqE-xSmoymvn6fhuBHaRw5jWoz4
-│   │   │   │   └── 60.1747130008646.HVKmliUck9V-Pg2rOT04bw1qGjb95gO9acDeSuclUfs.Vy8iYzM0LTE5NmM5MDJmMDkyIg.webp
+│   │   │   │   └── 60.1747154666823.HVKmliUck9V-Pg2rOT04bw1qGjb95gO9acDeSuclUfs.Vy8iYzM0LTE5NmM5MDJmMDkyIg.webp
 │   │   │   └── YbfqR_-ufh70tPr-0cKmnGDhjBpfHQT6eMiFrokWMnA
-│   │   │       └── 60.1747130008688.6Ym8Ol6RS5q0hvIhSUDXfy8ybGBU27WVTvWq81Tbcdg.Vy8iYTRkLTE5NmM5MDJmMDgxIg.webp
+│   │   │       └── 60.1747154666881.6Ym8Ol6RS5q0hvIhSUDXfy8ybGBU27WVTvWq81Tbcdg.Vy8iYTRkLTE5NmM5MDJmMDgxIg.webp
 │   │   ├── swc
 │   │   │   └── plugins
 │   │   │       └── v7_windows_x86_64_9.0.0
@@ -25,32 +39,117 @@ marsos-nextv2
 │   │   │   ├── client-development
 │   │   │   │   ├── 0.pack.gz
 │   │   │   │   ├── 1.pack.gz
+│   │   │   │   ├── 10.pack.gz
+│   │   │   │   ├── 11.pack.gz
+│   │   │   │   ├── 12.pack.gz
+│   │   │   │   ├── 13.pack.gz
+│   │   │   │   ├── 14.pack.gz
+│   │   │   │   ├── 15.pack.gz
+│   │   │   │   ├── 16.pack.gz
+│   │   │   │   ├── 17.pack.gz
+│   │   │   │   ├── 18.pack.gz
+│   │   │   │   ├── 19.pack.gz
 │   │   │   │   ├── 2.pack.gz
+│   │   │   │   ├── 20.pack.gz
+│   │   │   │   ├── 21.pack.gz
+│   │   │   │   ├── 22.pack.gz
+│   │   │   │   ├── 23.pack.gz
+│   │   │   │   ├── 24.pack.gz
+│   │   │   │   ├── 25.pack.gz
+│   │   │   │   ├── 26.pack.gz
+│   │   │   │   ├── 27.pack.gz
+│   │   │   │   ├── 28.pack.gz
+│   │   │   │   ├── 29.pack.gz
+│   │   │   │   ├── 3.pack.gz
+│   │   │   │   ├── 30.pack.gz
+│   │   │   │   ├── 31.pack.gz
+│   │   │   │   ├── 32.pack.gz
+│   │   │   │   ├── 33.pack.gz
+│   │   │   │   ├── 34.pack.gz
+│   │   │   │   ├── 35.pack.gz
+│   │   │   │   ├── 4.pack.gz
+│   │   │   │   ├── 5.pack.gz
+│   │   │   │   ├── 6.pack.gz
+│   │   │   │   ├── 7.pack.gz
+│   │   │   │   ├── 8.pack.gz
+│   │   │   │   ├── 9.pack.gz
+│   │   │   │   ├── index.pack.gz
+│   │   │   │   └── index.pack.gz.old
+│   │   │   ├── client-development-fallback
+│   │   │   │   ├── 0.pack.gz
 │   │   │   │   ├── index.pack.gz
 │   │   │   │   └── index.pack.gz.old
 │   │   │   ├── edge-server-development
 │   │   │   │   ├── 0.pack.gz
 │   │   │   │   ├── 1.pack.gz
+│   │   │   │   ├── 2.pack.gz
 │   │   │   │   ├── index.pack.gz
 │   │   │   │   └── index.pack.gz.old
 │   │   │   └── server-development
 │   │   │       ├── 0.pack.gz
 │   │   │       ├── 1.pack.gz
+│   │   │       ├── 10.pack.gz
+│   │   │       ├── 11.pack.gz
+│   │   │       ├── 12.pack.gz
+│   │   │       ├── 13.pack.gz
+│   │   │       ├── 14.pack.gz
+│   │   │       ├── 15.pack.gz
+│   │   │       ├── 16.pack.gz
+│   │   │       ├── 17.pack.gz
+│   │   │       ├── 18.pack.gz
+│   │   │       ├── 19.pack.gz
 │   │   │       ├── 2.pack.gz
+│   │   │       ├── 20.pack.gz
+│   │   │       ├── 21.pack.gz
+│   │   │       ├── 22.pack.gz
+│   │   │       ├── 23.pack.gz
+│   │   │       ├── 24.pack.gz
+│   │   │       ├── 25.pack.gz
+│   │   │       ├── 26.pack.gz
+│   │   │       ├── 27.pack.gz
+│   │   │       ├── 28.pack.gz
+│   │   │       ├── 29.pack.gz
 │   │   │       ├── 3.pack.gz
+│   │   │       ├── 30.pack.gz
+│   │   │       ├── 31.pack.gz
+│   │   │       ├── 32.pack.gz
+│   │   │       ├── 33.pack.gz
+│   │   │       ├── 34.pack.gz
+│   │   │       ├── 35.pack.gz
+│   │   │       ├── 36.pack.gz
+│   │   │       ├── 37.pack.gz
+│   │   │       ├── 38.pack.gz
+│   │   │       ├── 39.pack.gz
+│   │   │       ├── 4.pack.gz
+│   │   │       ├── 5.pack.gz
+│   │   │       ├── 6.pack.gz
+│   │   │       ├── 7.pack.gz
+│   │   │       ├── 8.pack.gz
+│   │   │       ├── 9.pack.gz
 │   │   │       ├── index.pack.gz
 │   │   │       └── index.pack.gz.old
 │   │   └── .rscinfo
 │   ├── server
 │   │   ├── app
-│   │   │   ├── _not-found
+│   │   │   ├── cart
 │   │   │   │   ├── page_client-reference-manifest.js
 │   │   │   │   └── page.js
-│   │   │   ├── favicon.ico
-│   │   │   │   └── route.js
-│   │   │   ├── user-login
-│   │   │   │   ├── page_client-reference-manifest.js
-│   │   │   │   └── page.js
+│   │   │   ├── category
+│   │   │   │   └── [slug]
+│   │   │   │       ├── page_client-reference-manifest.js
+│   │   │   │       └── page.js
+│   │   │   ├── checkout
+│   │   │   │   └── [supplierId]
+│   │   │   │       ├── page_client-reference-manifest.js
+│   │   │   │       └── page.js
+│   │   │   ├── order-details
+│   │   │   │   └── [orderId]
+│   │   │   │       ├── page_client-reference-manifest.js
+│   │   │   │       └── page.js
+│   │   │   ├── product
+│   │   │   │   └── [id]
+│   │   │   │       ├── page_client-reference-manifest.js
+│   │   │   │       └── page.js
 │   │   │   ├── page_client-reference-manifest.js
 │   │   │   └── page.js
 │   │   ├── static
@@ -72,6 +171,7 @@ marsos-nextv2
 │   │   │   ├── @studio-freight.js
 │   │   │   ├── @swc.js
 │   │   │   ├── ansi-styles.js
+│   │   │   ├── aria-hidden.js
 │   │   │   ├── asynckit.js
 │   │   │   ├── axios.js
 │   │   │   ├── call-bind-apply-helpers.js
@@ -95,6 +195,7 @@ marsos-nextv2
 │   │   │   ├── framer-motion.js
 │   │   │   ├── function-bind.js
 │   │   │   ├── get-intrinsic.js
+│   │   │   ├── get-nonce.js
 │   │   │   ├── get-proto.js
 │   │   │   ├── gopd.js
 │   │   │   ├── has-flag.js
@@ -107,7 +208,6 @@ marsos-nextv2
 │   │   │   ├── i18next.js
 │   │   │   ├── idb.js
 │   │   │   ├── immer.js
-│   │   │   ├── input-otp.js
 │   │   │   ├── is-core-module.js
 │   │   │   ├── lodash.camelcase.js
 │   │   │   ├── long.js
@@ -122,14 +222,20 @@ marsos-nextv2
 │   │   │   ├── next-themes.js
 │   │   │   ├── next.js
 │   │   │   ├── node-fetch.js
+│   │   │   ├── object-assign.js
 │   │   │   ├── path-parse.js
+│   │   │   ├── prop-types.js
 │   │   │   ├── protobufjs.js
 │   │   │   ├── proxy-from-env.js
+│   │   │   ├── react-feather.js
 │   │   │   ├── react-i18next.js
 │   │   │   ├── react-is.js
 │   │   │   ├── react-redux.js
+│   │   │   ├── react-remove-scroll-bar.js
+│   │   │   ├── react-remove-scroll.js
 │   │   │   ├── react-select-country-list.js
 │   │   │   ├── react-select.js
+│   │   │   ├── react-style-singleton.js
 │   │   │   ├── redux-thunk.js
 │   │   │   ├── redux.js
 │   │   │   ├── reselect.js
@@ -142,7 +248,9 @@ marsos-nextv2
 │   │   │   ├── tailwind-merge.js
 │   │   │   ├── tr46.js
 │   │   │   ├── tslib.js
+│   │   │   ├── use-callback-ref.js
 │   │   │   ├── use-isomorphic-layout-effect.js
+│   │   │   ├── use-sidecar.js
 │   │   │   ├── use-sync-external-store.js
 │   │   │   ├── void-elements.js
 │   │   │   ├── webidl-conversions.js
@@ -165,10 +273,20 @@ marsos-nextv2
 │   ├── static
 │   │   ├── chunks
 │   │   │   ├── app
-│   │   │   │   ├── _not-found
+│   │   │   │   ├── cart
 │   │   │   │   │   └── page.js
-│   │   │   │   ├── user-login
-│   │   │   │   │   └── page.js
+│   │   │   │   ├── category
+│   │   │   │   │   └── [slug]
+│   │   │   │   │       └── page.js
+│   │   │   │   ├── checkout
+│   │   │   │   │   └── [supplierId]
+│   │   │   │   │       └── page.js
+│   │   │   │   ├── order-details
+│   │   │   │   │   └── [orderId]
+│   │   │   │   │       └── page.js
+│   │   │   │   ├── product
+│   │   │   │   │   └── [id]
+│   │   │   │   │       └── page.js
 │   │   │   │   ├── global-error.js
 │   │   │   │   ├── layout.js
 │   │   │   │   └── page.js
@@ -203,19 +321,44 @@ marsos-nextv2
 │   │   │   └── sar_symbol.bc094223.svg
 │   │   └── webpack
 │   │       ├── app
-│   │       │   ├── layout.bf94026351e95b6d.hot-update.js
-│   │       │   └── layout.f3b152450f101661.hot-update.js
+│   │       │   ├── checkout
+│   │       │   │   └── [supplierId]
+│   │       │   │       ├── page.5fc2712a27641ae3.hot-update.js
+│   │       │   │       └── page.ef2c9e4cbba3b8bd.hot-update.js
+│   │       │   ├── layout.5fc2712a27641ae3.hot-update.js
+│   │       │   ├── layout.c3f4024b77f2731d.hot-update.js
+│   │       │   └── layout.ef2c9e4cbba3b8bd.hot-update.js
+│   │       ├── 5fc2712a27641ae3.webpack.hot-update.json
 │   │       ├── 633457081244afec._.hot-update.json
-│   │       ├── bf94026351e95b6d.webpack.hot-update.json
-│   │       ├── cb9021fef9ee5d0b.webpack.hot-update.json
-│   │       ├── f3b152450f101661.webpack.hot-update.json
-│   │       ├── webpack.bf94026351e95b6d.hot-update.js
-│   │       ├── webpack.cb9021fef9ee5d0b.hot-update.js
-│   │       └── webpack.f3b152450f101661.hot-update.js
+│   │       ├── 8cbf42f8210ab3c5.webpack.hot-update.json
+│   │       ├── 9ab9f8d57e0538e3.webpack.hot-update.json
+│   │       ├── a85904a103671c0c.webpack.hot-update.json
+│   │       ├── c3f4024b77f2731d.webpack.hot-update.json
+│   │       ├── ef2c9e4cbba3b8bd.webpack.hot-update.json
+│   │       ├── f94619df71d029df.webpack.hot-update.json
+│   │       ├── webpack.5fc2712a27641ae3.hot-update.js
+│   │       ├── webpack.8cbf42f8210ab3c5.hot-update.js
+│   │       ├── webpack.9ab9f8d57e0538e3.hot-update.js
+│   │       ├── webpack.a85904a103671c0c.hot-update.js
+│   │       ├── webpack.c3f4024b77f2731d.hot-update.js
+│   │       ├── webpack.ef2c9e4cbba3b8bd.hot-update.js
+│   │       └── webpack.f94619df71d029df.hot-update.js
 │   ├── types
 │   │   ├── app
-│   │   │   ├── user-login
+│   │   │   ├── cart
 │   │   │   │   └── page.ts
+│   │   │   ├── category
+│   │   │   │   └── [slug]
+│   │   │   │       └── page.ts
+│   │   │   ├── checkout
+│   │   │   │   └── [supplierId]
+│   │   │   │       └── page.ts
+│   │   │   ├── order-details
+│   │   │   │   └── [orderId]
+│   │   │   │       └── page.ts
+│   │   │   ├── product
+│   │   │   │   └── [id]
+│   │   │   │       └── page.ts
 │   │   │   ├── layout.ts
 │   │   │   └── page.ts
 │   │   ├── cache-life.d.ts
@@ -284,7 +427,6 @@ marsos-nextv2
 │   ├── chat
 │   │   ├── cart
 │   │   │   └── [chatId]
-│   │   │       ├── CartChatClient.jsx
 │   │   │       └── page.jsx
 │   │   ├── product
 │   │   │   └── [chatId]
@@ -382,6 +524,7 @@ marsos-nextv2
 │   │   ├── BuyerProfile.jsx
 │   │   └── BuyerRegistration.js
 │   ├── chat
+│   │   ├── CartChatClient.jsx
 │   │   ├── ChatMessages.jsx
 │   │   ├── ChatMiniProductSnapshot.jsx
 │   │   ├── MiniProductDetails.jsx
@@ -519,6 +662,7 @@ marsos-nextv2
 │   ├── slugify.js
 │   ├── toastUtils.js
 │   └── translate.js
+├── .env.local
 ├── .gitignore
 ├── components.json
 ├── eslint.config.mjs

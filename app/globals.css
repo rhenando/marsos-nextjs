@@ -24,6 +24,18 @@
   }
 }
 
+/* globals.css */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

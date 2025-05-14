@@ -226,12 +226,14 @@ export default function CartPage() {
                   Contact Supplier to Negotiate
                 </Button>
 
-                <Button
-                  variant='outline'
-                  className='text-sm py-2 px-3 w-full md:w-auto'
-                  onClick={() => router.push(`/checkout/${supplierId}`)}
-                >
-                  Review Order
+                <Button variant='outline' asChild>
+                  <a
+                    href={`/print-invoice/${supplierId}`}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Review Order
+                  </a>
                 </Button>
               </div>
             </div>
