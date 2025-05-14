@@ -646,6 +646,23 @@
     "allCategories": "All Categories"
   },
 
+  "uncategorized": "Uncategorized",
+  "product_card": {
+    "loading": "Loading",
+    "hot": "Hot",
+    "unnamed_product": "Unnamed Product",
+    "supplier": "Supplier",
+    "unknown": "Unknown",
+    "negotiable": "Price Negotiable",
+    "min_order": "Min. Order: {{minOrder}}",
+    "view_details": "View Details",
+    "contact_supplier": "Contact Supplier",
+    "login_first": "Please log in first",
+    "no_supplier": "No supplier available",
+    "cannot_chat_own": "You can’t chat on your own product",
+    "chat_create_failed": "Failed to start chat"
+  },
+
   "orders": {
     "title": "Supplier Orders",
     "loading": "Loading orders…",

@@ -47,6 +47,24 @@
     "productsHeading": "المنتجات",
     "noResults": "لم يتم العثور على منتجات مطابقة."
   },
+
+  "uncategorized": "غير مصنف",
+  "product_card": {
+    "loading": "جاري التحميل",
+    "hot": "رائج",
+    "unnamed_product": "منتج بدون اسم",
+    "supplier": "المورد",
+    "unknown": "غير معروف",
+    "negotiable": "السعر قابل للتفاوض",
+    "min_order": "أقل طلب: {{minOrder}}",
+    "view_details": "عرض التفاصيل",
+    "contact_supplier": "تواصل مع المورد",
+    "login_first": "يرجى تسجيل الدخول أولاً",
+    "no_supplier": "لا يوجد مورد",
+    "cannot_chat_own": "لا يمكنك الدردشة على منتجك الخاص",
+    "chat_create_failed": "فشل في بدء الدردشة"
+  },
+
   "hero": {
     "title": "المنتجات السعودية تحت مظلة واحدة",
     "paragraph1": "نحن هنا لجعل الإستيراد أسهل و آمن. اكتشف منصة تجمع المنتجات السعودية - في مكان واحد.",

@@ -48,19 +48,19 @@ export default function UserMessages() {
           col: "rfqChats",
           label: "RFQ Inquiry",
           key: currentUser.role === "supplier" ? "supplierId" : "buyerId",
-          path: (id) => `/rfq-chat/${id}`,
+          path: (id) => `/chat/rfq/${id}`,
         },
         {
           col: "productChats",
           label: "Product Inquiry",
           key: currentUser.role === "supplier" ? "supplierId" : "buyerId",
-          path: (id) => `/product-chat/${id}`,
+          path: (id) => `/chat/product/${id}`,
         },
         {
           col: "cartChats",
           label: "Cart Inquiry",
           key: currentUser.role === "supplier" ? "supplierId" : "buyerId",
-          path: (id) => `/cart-chat/${id}`,
+          path: (id) => `/chat/cart/${id}`,
         },
         {
           col: "orderChats",
@@ -173,7 +173,7 @@ export default function UserMessages() {
   }
 
   return (
-    <div className='max-w-3xl mx-auto p-4 space-y-4'>
+    <div className='max-w-6xl mx-auto p-4 space-y-4'>
       <h1 className='text-2xl font-semibold'>Messages</h1>
 
       <div className='flex flex-col sm:flex-row gap-3'>

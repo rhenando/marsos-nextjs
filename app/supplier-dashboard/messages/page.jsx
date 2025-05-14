@@ -45,7 +45,7 @@ export default function SupplierMessages() {
           {
             collectionName: "rfqChats",
             label: t("messages.labels.rfq"),
-            buildPath: (id) => `/rfq-chat/${id}`,
+            buildPath: (id) => `/chat/rfq/${id}`,
           },
           {
             collectionName: "productChats",
@@ -129,7 +129,7 @@ export default function SupplierMessages() {
   }
 
   return (
-    <div className='w-full max-w-5xl mx-auto px-4 py-6'>
+    <div className='w-full max-w-6xl mx-auto px-4 py-6'>
       <Card className='p-4 sm:p-6'>
         <h2 className='text-xl font-semibold mb-4'>{t("messages.title")}</h2>
 

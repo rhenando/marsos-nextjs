@@ -1,4 +1,3 @@
-// components/global/ProductCard.jsx
 "use client";
 
 import { memo, useEffect, useTransition } from "react";
@@ -6,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import { Eye, Mail, Heart } from "react-feather";
 import { getAuth } from "firebase/auth";
-import { doc, setDoc, serverTimestamp } from "firebase/firestore";
+import { doc, setDoc, getDoc, serverTimestamp } from "firebase/firestore"; // ← import getDoc here
 import Currency from "@/components/global/CurrencySymbol";
 import { toast } from "sonner";
 import { db } from "@/firebase/config";
@@ -45,10 +44,19 @@ const ProductCard = ({ product, locale, currencySymbol, formatNumber }) => {
     const auth = getAuth();
     const currentUser = auth.currentUser;
 
+    // Prevent supplier chatting with their own product
+    if (currentUser && currentUser.uid === product.supplierId) {
+      toast.error(t("product_card.cannot_chat_own"));
+      return;
+    }
+
+    // Require login
     if (!currentUser) {
       toast.error(t("product_card.login_first"));
       return;
     }
+
+    // Require valid supplier
     if (!product?.supplierId) {
       toast.error(t("product_card.no_supplier"));
       return;
@@ -59,41 +67,40 @@ const ProductCard = ({ product, locale, currencySymbol, formatNumber }) => {
     const miniRef = doc(db, "miniProductsData", chatId);
 
     try {
-      // 1️⃣ Upsert the chat thread
-      await setDoc(
-        chatRef,
-        {
-          buyerId: currentUser.uid,
-          supplierId: product.supplierId,
-          productId: product.id,
-          participants: [currentUser.uid, product.supplierId],
-          createdAt: serverTimestamp(),
-          // leave messages field to be added by your chat UI
-        },
-        { merge: true }
-      );
+      // 0️⃣ Check if chat already exists
+      const existing = await getDoc(chatRef);
+      if (existing.exists()) {
+        // Navigate without re-creating
+        router.push(`/chat/product/${chatId}`);
+        return;
+      }
 
-      // 2️⃣ Create a snapshot of the product
-      await setDoc(
-        miniRef,
-        {
-          originalProductId: product.id,
-          productName: product.productName,
-          mainImageUrl: product.mainImageUrl,
-          priceRanges: product.priceRanges,
-          supplierName: product.supplierName,
-          category: product.category,
-          snapshotAt: serverTimestamp(),
-        },
-        { merge: true }
-      );
+      // 1️⃣ Create the chat thread (fresh write)
+      await setDoc(chatRef, {
+        buyerId: currentUser.uid,
+        supplierId: product.supplierId,
+        productId: product.id,
+        participants: [currentUser.uid, product.supplierId],
+        createdAt: serverTimestamp(),
+      });
+
+      // 2️⃣ Create a snapshot of the product (fresh write)
+      await setDoc(miniRef, {
+        originalProductId: product.id,
+        productName: product.productName,
+        mainImageUrl: product.mainImageUrl,
+        priceRanges: product.priceRanges,
+        supplierName: product.supplierName,
+        category: product.category,
+        snapshotAt: serverTimestamp(),
+      });
     } catch (err) {
       console.error("Error initializing chat or snapshot:", err);
       toast.error(t("product_card.chat_create_failed"));
       return;
     }
 
-    // 3️⃣ Navigate into the chat page
+    // 3️⃣ Navigate into the new chat
     router.push(`/chat/product/${chatId}`);
   };
 

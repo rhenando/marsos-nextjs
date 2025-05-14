@@ -10,29 +10,32 @@ import {
   where,
   onSnapshot,
 } from "firebase/firestore";
+import { useSelector } from "react-redux";
 import { db } from "@/firebase/config";
-import { useAuth } from "@/context/AuthContext";
 import ChatMessages from "@/components/chat/ChatMessages";
 
 export default function RfqChatClient({ chatId }) {
-  const { currentUser } = useAuth();
+  // Read currentUser from Redux instead of useAuth()
+  const currentUser = useSelector((state) => state.auth.user);
+
   const [chatMeta, setChatMeta] = useState(null);
   const [rfqList, setRfqList] = useState([]);
 
-  // Load chat metadata
+  // 1️⃣ Load chat metadata
   useEffect(() => {
     if (!chatId) return;
     getDoc(doc(db, "rfqChats", chatId)).then((snap) => {
       if (snap.exists()) {
+        const data = snap.data();
         setChatMeta({
-          ...snap.data(),
-          createdAt: snap.data().createdAt?.toDate()?.toISOString() || null,
+          ...data,
+          createdAt: data.createdAt?.toDate()?.toISOString() || null,
         });
       }
     });
   }, [chatId]);
 
-  // Subscribe to all RFQs matching buyerId & supplierId
+  // 2️⃣ Subscribe to all RFQs matching buyerId & supplierId
   useEffect(() => {
     if (!chatMeta?.buyerId || !chatMeta?.supplierId) return;
 
@@ -44,11 +47,14 @@ export default function RfqChatClient({ chatId }) {
 
     const unsub = onSnapshot(q, (snap) => {
       setRfqList(
-        snap.docs.map((d) => ({
-          id: d.id,
-          ...d.data(),
-          timestamp: d.data().timestamp?.toDate?.().toISOString() || "",
-        }))
+        snap.docs.map((d) => {
+          const data = d.data();
+          return {
+            id: d.id,
+            ...data,
+            timestamp: data.timestamp?.toDate?.().toISOString() || "",
+          };
+        })
       );
     });
 
