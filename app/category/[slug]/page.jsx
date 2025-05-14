@@ -1,28 +1,30 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useParams } from "next/navigation"; // ✅ FIX: Use this in client components
+import { useParams } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import { db } from "@/firebase/config";
 import { collection, getDocs } from "firebase/firestore";
 import ProductCard from "@/components/global/ProductCard";
 import { Skeleton } from "@/components/ui/skeleton";
 
-// ✅ Slugify utility
+// Broadened slugify for full Arabic range
 const slugify = (text) =>
   text
     .toString()
     .trim()
     .toLowerCase()
     .replace(/\s+/g, "-")
-    .replace(/[^\w\-ا-ي]+/g, "")
+    // allow A–Z, 0–9, underscore, dash, space, and Arabic \u0600–\u06FF
+    .replace(/[^\w\- \u0600-\u06FF]+/g, "")
     .replace(/--+/g, "-")
     .replace(/^-+/, "")
     .replace(/-+$/, "");
 
-const CategoryPage = () => {
-  const params = useParams(); // ✅ NOW required in Next.js 15+
-  const slug = params?.slug;
+export default function CategoryPage() {
+  const params = useParams();
+  // decode percent-encoding into a proper Arabic string
+  const rawSlug = params?.slug ? decodeURIComponent(params.slug) : "";
 
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -36,7 +38,7 @@ const CategoryPage = () => {
     new Intl.NumberFormat(locale, { minimumFractionDigits: 2 }).format(number);
 
   useEffect(() => {
-    if (!slug) return;
+    if (!rawSlug) return;
 
     const fetchProducts = async () => {
       try {
@@ -46,9 +48,10 @@ const CategoryPage = () => {
           ...doc.data(),
         }));
 
+        // compare slugified category names to the decoded slug
         const matched = allProducts.filter((p) => {
           const categorySlug = p.category ? slugify(p.category) : "";
-          return categorySlug === slug;
+          return categorySlug === rawSlug;
         });
 
         if (matched.length > 0) {
@@ -56,17 +59,18 @@ const CategoryPage = () => {
         }
 
         setProducts(matched);
-        setLoading(false);
       } catch (err) {
         console.error("Failed to fetch category:", err);
+      } finally {
         setLoading(false);
       }
     };
 
     fetchProducts();
-  }, [slug]);
+  }, [rawSlug]);
 
-  const readableCategory = categoryName || slug?.replace(/-/g, " ");
+  // fallback to turning hyphens back into spaces
+  const readableCategory = categoryName || rawSlug.replace(/-/g, " ");
 
   return (
     <div className='container mx-auto px-4 py-6'>
@@ -99,6 +103,4 @@ const CategoryPage = () => {
       )}
     </div>
   );
-};
-
-export default CategoryPage;
+}
